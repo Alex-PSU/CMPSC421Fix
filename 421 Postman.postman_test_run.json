@@ -1,0 +1,207 @@
+{
+	"id": "d83fbe19-3f32-49c2-a905-9e473e11216d",
+	"name": "421 Postman",
+	"timestamp": "2025-03-07T22:37:28.429Z",
+	"collection_id": "38622848-3cb0559a-4ded-457e-99ca-9878222c7be5",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 10,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-03-07T22:37:25.547Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "1a40c0bb-9a07-4dca-9fbe-e30959094f9c",
+			"name": "Create Customer",
+			"url": "http://localhost:3000/customers",
+			"time": 51,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response has customer ID": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has customer ID": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				51
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response has customer ID": true
+				}
+			]
+		},
+		{
+			"id": "3b8dbe72-11f7-4b61-9864-9ffe09215800",
+			"name": "Create an Order",
+			"url": "http://localhost:3000/orders",
+			"time": 27,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Response has order ID": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has order ID": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				27
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Response has order ID": true
+				}
+			]
+		},
+		{
+			"id": "f6b2dc25-0355-4338-a1ad-f8d60559ff3b",
+			"name": "Get an Order",
+			"url": "http://localhost:3000/orders/67cb36ba08e4a3a6afca8b83",
+			"time": 25,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response contains order details": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains order details": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				25
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response contains order details": true
+				}
+			]
+		},
+		{
+			"id": "3c519bf4-19f1-4ce3-9a82-e956f87fc12d",
+			"name": "Cancel an Order",
+			"url": "http://localhost:3000/orders/67cb36fd08e4a3a6afca8b86",
+			"time": 29,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Order status is canceled": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Order status is canceled": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				29
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Order status is canceled": true
+				}
+			]
+		},
+		{
+			"id": "c946e01c-164c-4aa8-a209-0209fbeb90f0",
+			"name": "Add a Payment",
+			"url": "http://localhost:3000/payments",
+			"time": 2028,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Payment status is paid": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Payment status is paid": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2028
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Payment status is paid": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2160,
+	"collection": {
+		"requests": [
+			{
+				"id": "1a40c0bb-9a07-4dca-9fbe-e30959094f9c",
+				"method": "POST"
+			},
+			{
+				"id": "3b8dbe72-11f7-4b61-9864-9ffe09215800",
+				"method": "POST"
+			},
+			{
+				"id": "f6b2dc25-0355-4338-a1ad-f8d60559ff3b",
+				"method": "GET"
+			},
+			{
+				"id": "3c519bf4-19f1-4ce3-9a82-e956f87fc12d",
+				"method": "DELETE"
+			},
+			{
+				"id": "c946e01c-164c-4aa8-a209-0209fbeb90f0",
+				"method": "POST"
+			}
+		]
+	}
+}
