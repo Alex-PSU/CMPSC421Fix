@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const PORT = 3000;
 
-// MongoDB URI (using your provided username and password)
+// MongoDB URI
 const mongoURI = 'mongodb+srv://ajh7050:8UkpmTRYja0ZVPxC@cluster0.yqpfc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 // Middleware
